@@ -6,7 +6,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
         <version>1.5.2.RELEASE</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>com.udea.app</groupId>
@@ -19,7 +19,7 @@
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
         <assertj.version>3.6.2</assertj.version>
         <awaitility.version>2.0.0</awaitility.version>
-        <commons-io.version>2.5</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <commons-lang.version>3.5</commons-lang.version>
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <!-- Overridden to get metrics-jcache -->
@@ -52,8 +52,8 @@
         <node.version>v6.10.0</node.version>
         <npm.version>4.3.0</npm.version>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
+        <profile.no-liquibase/>
+        <profile.swagger/>
         <prometheus-simpleclient.version>0.0.20</prometheus-simpleclient.version>
         <!-- Sonar properties -->
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>
@@ -561,7 +561,7 @@
                     <url>jdbc:mysql://localhost:3306/miblog</url>
                     <defaultSchemaName>miblog</defaultSchemaName>
                     <username>root</username>
-                    <password></password>
+                    <password/>
                     <referenceUrl>hibernate:spring:com.udea.app.domain?dialect=org.hibernate.dialect.MySQL5InnoDBDialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>
